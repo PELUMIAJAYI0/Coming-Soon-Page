@@ -1,0 +1,115 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+
+ }
+
+ .logo{
+    width: 100px;
+    padding: 10px 0;
+    cursor: pointer;
+ }
+
+ .content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+ }
+
+ .content h1{
+    font-size: 48px;
+    font-weight: 500;
+ }
+
+ .content h1 span{
+    color: #ff3757;
+ }
+
+ .content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+ }
+
+ .content button img{
+    width: 20px;
+    margin-left: 5px;
+ }
+
+ .launch-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .launch-time div p{
+    font-size: 24px;
+    margin-bottom: 2px;
+ }
+
+ .rocket{
+    width: 150px;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    animation: rocket 5s linear infinite;
+ }
+
+ @keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 1;
+    }
+ }
+
+ /* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+   .logo {
+       width: 80px;
+   }
+
+   .content h1 {
+       font-size: 36px;
+   }
+
+   .content button {
+       padding: 8px 16px;
+       font-size: 14px;
+   }
+
+   .content button img {
+       width: 16px;
+   }
+
+   .launch-time div p {
+       font-size: 20px;
+   }
+
+   .rocket {
+       width: 100px;
+       right: 2%;
+   }
+}
+
